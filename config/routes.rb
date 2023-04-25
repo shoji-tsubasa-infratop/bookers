@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get '' => 'homes#top'
+  root to: 'homes#top'
+  #get 'top' => 'homes#top'
   resources :books
   # get 'books' => 'books#index', as:'books'
   # post 'books' => 'books#create'

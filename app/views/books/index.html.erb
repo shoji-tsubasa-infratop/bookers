@@ -30,6 +30,7 @@
 <div class="massage-failed">
   <%= flash[:danger] %>
 </div>
+
 <%= form_with model: @books, url: books_path, method: :post do |f| %>
 
 <div class="box-text">Title</div>
