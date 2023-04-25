@@ -1,3 +1,7 @@
+<div class="massage-success">
+  <%= flash[:notice] %>
+</div>
+
 <h1>Books</h1>
 <table>
   <thead>
@@ -13,7 +17,7 @@
       <td>
         <%= link_to 'Show', book_path(book.id) %>
         <%= link_to 'Edit', edit_book_path(book.id) %>
-        <%= link_to 'Destroy', destroy_book_path(book.id), method: :delete, "data-confirm"=>"Are you sure?" %>
+        <%= link_to 'Destroy', book_path(book.id), method: :delete, "data-confirm"=>"Are you sure?" %>
       </td>
     </tr>
   <% end %>
@@ -23,17 +27,19 @@
 
 
 <h2>New book</h2>
-<div>
-  <%= flash[:notice] %>
+<div class="massage-failed">
+  <%= flash[:danger] %>
 </div>
 <%= form_with model: @books, url: books_path, method: :post do |f| %>
 
-<p>Title</p>
+<div class="box-text">Title</div>
 <%= f.text_field :title %>
 
-<p>Body</p>
+<div class="box-text">Body</div>
 <%= f.text_area :body %>
 
+<div class="box-text">
 <%= f.submit 'Create Book' %>
+</div>
 
 <% end %>

@@ -1,3 +1,72 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h2 {
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 33px;
+}
+
+a {
+  color: #666666;
+}
+a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+th {
+  padding: 1px 1px 5px;
+  text-align: center;
+}
+
+td {
+  max-width: 300px;
+  min-width: 120px;
+  padding: 1px 5px 7px;
+}
+
+.box-text {
+  margin-top: 1em;
+}
+
+.massage-success {
+  color: #008000;
+}
+
+.massage-failed {
+  color: #ff0000;
+}
